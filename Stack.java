@@ -15,20 +15,23 @@ class Stack {
     private final ArrayList<Integer> myStack = new ArrayList<Integer>();
     private static String update = "";
 
+    // Adds integers onto stack
     public void push(int number)
     {
         myStack.add(number);
     }
 
-    public String pop() 
+    // Removes last value of stack
+    public String pop()
     {
         //removes top value from stack
         int top = myStack.size()-1;
         myStack.remove(top);
         update = "Value was removed.";
-        return update; 
+        return update;
     }
 
+    // Converts stack into a string
     public String toString()
     {
         String output = "";
