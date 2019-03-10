@@ -26,8 +26,7 @@ class Stack {
     {
         //removes top value from stack
         int top = myStack.size()-1;
-        myStack.remove(top);
-        update = "Value was removed.";
+        update = myStack.remove(top) + " was removed.";
         return update;
     }
 
