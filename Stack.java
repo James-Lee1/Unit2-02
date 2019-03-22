@@ -10,10 +10,9 @@
 
 import java.util.ArrayList;
 
-class Stack {
-
-    private final ArrayList<Integer> myStack = new ArrayList<Integer>();
-    private static String update = "";
+class Stack
+{
+    private static final ArrayList<Integer> myStack = new ArrayList<Integer>();
 
     // Adds integers onto stack
     public void push(int number)
@@ -22,11 +21,10 @@ class Stack {
     }
 
     // Removes last value of stack
-    public String pop()
+    public int pop()
     {
         //removes top value from stack
-        int top = myStack.size()-1;
-        update = myStack.remove(top) + " was removed.";
+        int update = myStack.remove(myStack.size()-1);
         return update;
     }
 
