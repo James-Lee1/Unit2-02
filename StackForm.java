@@ -8,7 +8,7 @@
  *
  ****************************************************************************/
 
-class StackForm
+public class StackForm
 {
     public static void main(String[] args)
     {
@@ -21,7 +21,7 @@ class StackForm
         stack.push(10);
 
         // Pops last number
-        System.out.println(stack.pop());
+        System.out.println("Number " + stack.pop() + " was removed");
 
         // Prints out the whole stack
         System.out.println(stack.toString());
